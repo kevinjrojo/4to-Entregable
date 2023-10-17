@@ -1,0 +1,20 @@
+{
+  "name": "4to-desafio-coder",
+  "version": "0.0.1",
+  "description": "desafio de coder house numero 4 ",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [
+    "socket.io",
+    "javascript",
+    "node.js",
+    "handlebars",
+    "websocket"
+  ],
+  "author": "kevin rojo",
+  "license": "MIT"
+}

@@ -1,0 +1,30 @@
+<!-- src/views/realTimeProducts.handlebars -->
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos en Tiempo Real</title>
+  </head>
+  <body>
+    <h1>Productos en Tiempo Real</h1>
+    <ul>
+      {{#each realTimeProducts}}
+        <li>{{this.title}} - {{this.price}}</li>
+      {{/each}}
+    </ul>
+    <form id="productForm">
+      <!-- Agregar campos y botones para crear un nuevo producto a través de WebSockets -->
+      <input type="text" id="productTitle" placeholder="Título del producto" />
+      <input
+        type="number"
+        id="productPrice"
+        placeholder="Precio del producto"
+      />
+      <button id="createProductButton">Crear Producto</button>
+    </form>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
